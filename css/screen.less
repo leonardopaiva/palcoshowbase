@@ -1,0 +1,225 @@
+/*
+# Desenvolvido por: Leonardo Paiva | http://www.leonardopaiva.com
+		- Leonardo Paiva - https://github.com/leonardopaiva
+
+# Data de Criação: 15-08-2015
+# Data da Última Atualização: 00-00-0000
+#
+!*/
+
+/* -----------------------------------------------------------
+  *CLASS
+------------------------------------------------------ */
+/* margin */
+.margin-bottom-smaller{
+	margin-bottom:5px!important;
+}
+/* padding */
+.padding-top-normal{
+	padding-top:30px!important;
+}
+.padding-bottom-normal{
+	padding-bottom:30px!important;
+}
+.padding-custom-b{
+	padding:14px!important;
+}
+.no-padding-left{
+	padding-left:0!important;
+}
+.no-padding-right{
+	padding-right:0!important;
+}
+/* width */
+.width-full{
+	width:100%!important;
+}
+
+/* -----------------------------------------------------------
+  *STRUCTURE
+------------------------------------------------------ */
+/* ------------------
+	wrap-form-template
+--------------------- */
+.wrap-form-template{
+	width:100%;
+	border:1px solid #ccc;
+	position:relative;
+	.padding-right-custom{
+		padding-right:40px;
+	}
+	.btn{
+		position:absolute;
+		top:0;
+		right:0;
+		z-index:2;
+	}
+}
+/* -----------------------------------------------------------
+  *CONTENT
+------------------------------------------------------ */
+/* --------------
+	wrap-products
+-----------------	*/
+.wrap-products{
+	width:100%;
+}
+
+.nav-products{
+	width:101%;
+	margin-bottom:10px;
+	a{
+		display:inline-block;
+		width:14%;
+		margin-right:2%;
+		border:1px solid #ccc;
+		position:relative;
+		top:0;
+		transition:0.3s;-moz-transition:0.3s;-webkit-transition:0.3s;-o-transition:0.3s;-ms-transition:0.3s;
+		img{
+			width:100%;
+		}
+		&:hover{
+			top:-3px;
+		}
+	}
+	a:last-child{
+		margin-right:0!important;
+	}
+}
+
+/* -----------------
+	wrap-donation
+-------------------- */
+.wrap-donation{
+	.padding-custom{
+		padding:24px 80px 24px 10px;
+	}
+}
+
+/* ------------------
+	wrap-institutional
+--------------------- */
+.wrap-institutional{
+	padding:30px 10px;
+}
+
+/* -----------------------------------------------------------
+  *SIDEBAR
+------------------------------------------------------ */
+/* ------------------
+	wrap-chat
+--------------------- */
+.wrap-chat{
+	margin-bottom:3px;
+	.content-chat{
+		height:475px;
+		padding:15px;
+		border:1px solid #ccc;
+		border-bottom:none;
+		overflow:auto;
+		.name{
+			display:block;
+		}
+	}
+	.padding-right-custom{
+		padding:24px 30px 24px 15px;
+	}
+}
+
+/* ------------------
+	wrap-clap
+--------------------- */
+.wrap-clap{
+	margin-bottom:10px;
+
+}
+
+/* =============================================================================
+	MEDIA QUERIES
+========================================================================== */
+/* ---------
+	MIN 768px
+------------ */
+@media screen and (min-width: 768px){
+	/* padding */
+	.padding-left-sm{
+		padding-left:0!important;
+	}
+	.padding-right-sm{
+		padding-right:0!important;
+	}
+}
+/* ---------
+	MAX 1200px
+------------ */
+@media screen and (max-width: 1200px){
+	.nav-products{
+		a{
+			width:13%;
+			margin-right:3%;
+		}
+	}
+	/* ------------------
+	wrap-chat
+	--------------------- */
+	.wrap-chat{
+		.content-chat{
+			height:385px;
+
+		}
+	}
+}
+/* ---------
+	MAX 992px
+------------ */
+@media screen and (max-width: 992px){
+	.nav-products{
+		a{
+			width:11%;
+			margin-right:5%;
+		}
+	}
+	/* ------------------
+	wrap-chat
+	--------------------- */
+	.wrap-chat{
+		.content-chat{
+			height:341px;
+
+		}
+	}
+}
+/* ---------
+	MAX 768px
+------------ */
+@media screen and (max-width: 768px){
+	.nav-products{
+		a{
+			width:11%;
+			margin-right:6%;
+		}
+	}
+}
+/* ---------
+	MAX 526px
+------------ */
+@media screen and (max-width: 526px){
+	.nav-products{
+		a{
+			width:14%;
+			margin-right:2%;
+		}
+	}
+}
+/* ---------
+	MAX 400px
+------------ */
+@media screen and (max-width: 400px){
+	.nav-products{
+		a{
+			width:13%;
+			margin-right:3%;
+		}
+	}
+}
